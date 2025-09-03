@@ -23,9 +23,11 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@nestjs/core",
       "@tailwindcss/oxide",
       "core-js-pure",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ]
   }
 }
