@@ -8,6 +8,7 @@
       "outputs": [".next/**", "!.next/cache/**", "dist"],
       "env":["API_URL"]
     },
+    "test":{},
     "lint": {
       "dependsOn": ["^lint"]
     },
