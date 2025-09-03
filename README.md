@@ -29,7 +29,22 @@ To use the components in your app, import them from the `ui` package.
 ```tsx
 import { Button } from "@workspace/ui/components/button"
 ```
+---Prisma config---
+1. env copy
+cp .env.example ./.env
+cp .env.example ./packages/database/.env
+cp .env.example ./apps/web/.env
+cp .env.example ./apps/api/.env
 
+2. Docker database
+BASH: 
+docker-compose up -d
+
+3. Migrate
+pnpm run db:migrate:dev
+
+4. seed
+npm run db:seed
 
 NEXTJS Config
 

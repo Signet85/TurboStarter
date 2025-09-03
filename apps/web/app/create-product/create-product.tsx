@@ -4,11 +4,11 @@ export default async function CreateProduct(){
     return(
         <div>
             <form action={createProduct}>
-                <div>
-                    <label htmlFor="name">Name:</label>
+                <div className="border-4">
+                    <label htmlFor="name" >Name:</label>
                     <input type="text" name="name" id="name" />
                 </div>
-                <div>
+                <div className="border-4">
                     <label htmlFor="price">Price:</label>
                     <input type="number" id="price" name= "price" />
                 </div>

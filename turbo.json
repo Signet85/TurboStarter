@@ -6,7 +6,7 @@
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**", "dist"],
-      "env":["API_URL"]
+      "env":["API_URL", "DATABASE_URL"]
     },
     "test":{},
     "lint": {
@@ -15,9 +15,26 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
+     "db:migrate:dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:migrate:deploy": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
+    },
+    "db:seed": {
+      "cache": false
+    },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "generate": {
+      "dependsOn": ["^generate"],
+      "cache": false
     }
   }
 }
