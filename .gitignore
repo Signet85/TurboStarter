@@ -36,8 +36,8 @@ npm-debug.log*
 *.pem
 
 # Prisma
-generated/
-migrations/
+#generated/
+#migrations/
 
 #pnp-lock
 pnpm-lock.yaml
